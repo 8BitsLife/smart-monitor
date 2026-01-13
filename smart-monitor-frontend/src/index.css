@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { height: 100%; }
+
+.glass {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(24, 24, 27, 0.08);
+}
+
+.dark .glass {
+  background: rgba(24, 24, 27, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glow { box-shadow: 0 0 30px rgba(59, 130, 246, 0.18); }
+
+@keyframes shimmer { 100% { transform: translateX(100%); } }
